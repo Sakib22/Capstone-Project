@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background-color: #f2f2f2;
+  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+.button{
+  background-color: #ff1a1a;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff1a1a;
+}
+.button1:hover {
+  background-color: #ff1a1a;
+  color: white;
+}
+.add-patient{
+  box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+.add-patient:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+.add-patient:active {
+	position:relative;
+	top:1px;
+}
+</style>
+</head>
+<body>
+
+<h2>Patient Table</h2>
+
+<table>
+  <tr>
+    <th>Patient Names</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td><button class="button button1">Delete</button></td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td><button class="button button1">Delete</button></td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td><button class="button button1">Delete</button></td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td><button class="button button1">Delete</button></td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td><button class="button button1">Delete</button></td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td><button class="button button1">Delete</button></td>
+  </tr>
+</table>
+
+<button class="add-patient">ADD NEW PATIENT</button>
+
+</body>
+</html>

@@ -24,14 +24,14 @@ session_start();
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="pwd">
 
-        <button type="submit" name="login-submit">Login</button>
+        <button type="submit" name="login-submit" class="submit">Login</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
       </div>
 
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
+      <a href="staffSignup.php" class="button">Signup</a>
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div>
     </form>

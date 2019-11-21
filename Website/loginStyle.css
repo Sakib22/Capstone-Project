@@ -12,7 +12,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-button {
+.submit {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -22,16 +22,33 @@ button {
   width: 100%;
 }
 
-button:hover {
+.submit:hover {
   opacity: 0.8;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+a.button {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
 }
-
+a.button:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+a.button:active {
+	position:relative;
+	top:1px;
+}
 .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
@@ -56,8 +73,5 @@ span.psw {
   span.psw {
      display: block;
      float: none;
-  }
-  .cancelbtn {
-     width: 100%;
   }
 }

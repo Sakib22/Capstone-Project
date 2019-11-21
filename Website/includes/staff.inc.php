@@ -4,9 +4,9 @@ if (isset($_POST['login-submit'])) {
   require 'dbh.inc.php';
 
   $username = $_POST['user'];
-  $pwd = $_POST['pwd'];
+  $password = $_POST['pwd'];
 
-  if (empty($username) || empty($pwd)){
+  if (empty($username) || empty($password)){
     header("Location: ../header.php?error=emptyfields");
     exit();
   }
@@ -22,11 +22,7 @@ if (isset($_POST['login-submit'])) {
       mysqli_stmt_execute($stmt);
       $result = mysqli_stmt_get_result($stmt);
       if ($row = mysqli_fetch_assoc($result)) {
-        $pwd2 = $row['pwdStaff'];
-        echo $pwd2;
-        echo $pwd;
-        echo "<h2>" . "hello" . "</h2>";
-        $pwdCheck = password_verify($pwd, $row['pwdStaff']);
+        $pwdCheck = password_verify($password, $row['pwdStaff']);
         if ($pwdCheck == false) {
           header("Location: ../header.php?error=wrongpwd");
           exit();
@@ -36,7 +32,7 @@ if (isset($_POST['login-submit'])) {
           $_SESSION['staffId'] = $row['idStaff'];
           $_SESSION['staffUid'] = $row['uidStaff'];
 
-          header("Location: ../header.php?login=success");
+          header("Location: ../staff.php?login=success");
           exit();
         }
         else {
@@ -50,7 +46,6 @@ if (isset($_POST['login-submit'])) {
       }
     }
   }
-
 }
 else{
   header("Location: ../header.php");

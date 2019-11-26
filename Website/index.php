@@ -18,5 +18,5 @@
     </main>
 
 <?php
-  require "footer.php";
+  require "logout.php";
  ?>

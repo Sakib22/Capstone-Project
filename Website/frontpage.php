@@ -1,6 +1,7 @@
+<?php
+session_start();
+ ?>
 <!DOCTYPE html>
-
-
 <html>
 <link rel="stylesheet" href="frontpage.css">
 <body>

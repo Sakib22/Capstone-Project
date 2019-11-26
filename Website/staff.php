@@ -37,6 +37,12 @@
     <td><button class="button button1">Delete</button></td>
   </tr>
 </table>
-<button class="add-patient">ADD NEW PATIENT</button>
+<div class="container" style="background-color:#f1f1f1">
+<a href="careGiverSignup.php" class="add-patient">ADD NEW USER</a>
+</div>
+<br/><br/>
+<div class="logout">
+<a href="index.php?logout=true">Logout</a>
+</div>
 </body>
 </html>

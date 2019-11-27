@@ -11,9 +11,7 @@
     <h2>Login Form</h2>
 
     <form class="form-staff" action="includes/staff.inc.php" method="post">
-      <div class="imgcontainer">
-        <img src="logo100.png" alt="Avatar" class="avatar">
-      </div>
+    
 
       <div class="container">
         <label for="uname"><b>Username</b></label>

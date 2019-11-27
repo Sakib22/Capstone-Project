@@ -9,9 +9,7 @@
 <h2>Care Giver Login</h2>
 
 <form class="form-patients" action="includes/careGiver.inc.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+  
 
   <div class="container">
     <label for="uname"><b>Username</b></label>

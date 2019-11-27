@@ -32,7 +32,7 @@ if (isset($_POST['login-submit'])) {
           $_SESSION['patientsId'] = $row['idPatients'];
           $_SESSION['patientsUid'] = $row['uidPatients'];
 
-          header("Location: ../careGiverLogin.php?login=success");
+          header("Location: ../patientsMedia.php?login=success");
           exit();
         }
         else {
